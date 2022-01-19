@@ -5,9 +5,6 @@ body {
 }
 
 .center {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    border: 5px solid white;
+    text-align: center;
     padding: 10px;
 }
