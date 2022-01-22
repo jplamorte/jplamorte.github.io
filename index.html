@@ -28,10 +28,43 @@
 <body>
 <div class="center">
     <h1>jp.lamorte</h1>
-    <p>my personal website</p>
-    <p>welcome. not much here yet</p>
+    <p>welcome to my personal website.</p>
+    <p>not much here yet.</p>
+    <details>
+        <summary>I dunno. Click here for some math.</summary>
+    <label> Ohm's Law:</label>
+    <form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+        <label> V <input type="number" id="a" value="0"></label>
+        /
+        <label> I <input type="number" id="b" value="0"></label>
+        =
+        <label> R <output name="x" for="a b"></output></label>
+    </form>
+
+    <form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+        <label> V <input type="number" id="a" value="0"></label>
+        /
+        <label> R <input type="number" id="b" value="0"></label>
+        =
+        <label> I <output name="x" for="a b"></output></label>
+    </form>
+    <label>3 Phase Power:</label>
+    <form oninput="x.value=(1.73*parseFloat(a.value)*parseFloat(b.value)*parseFloat(c.value))/1000">
+        <label> 1.73 </label>
+        *
+        <label> V <input type="number" id="a" value="0"></label>
+        *
+        <label> I <input type="number" id="b" value="0"></label>
+        *
+        <label> pF <input type="number" id="c" value="0"></label>
+        =
+        <label> KW <output name="x" for="a b c"></output></label>
+    </form>
+    </details>
     <!-- add nyan cat -->
+    </br>
     <img src="https://www.nyan.cat/cats/original.gif" alt="nyan cat">   
+    </br>
 </div>
 </body>
 </html>
