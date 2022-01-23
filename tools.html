@@ -1,1 +1,68 @@
+<!doctype HTML>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jp.lamorte</title>
 
+<meta property="og:title" content="jp.lamorte">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jplamorte.com">
+<meta property="og:description" content="my personal website.">
+<!-- <meta property="og:image" content="image.png" -->
+
+<link rel="stylesheet" href="css/styles.css?v=1.0">
+<script src="js/scripts.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJH3TKP245"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PJH3TKP245');
+</script>
+
+</head>
+
+<body>
+<div class="center">
+    <h1>jp.lamorte</h1>
+    <h2>tools</h2>
+    <details>
+        <summary>click here for some math.</summary>
+    <label> Ohm's Law:</label>
+    <form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+        <label> V <input type="number" id="a" value="0"></label>
+        /
+        <label> I <input type="number" id="b" value="0"></label>
+        =
+        <label> R <output name="x" for="a b"></output></label>
+    </form>
+
+    <form oninput="x.value=parseInt(a.value)/parseInt(b.value)">
+        <label> V <input type="number" id="a" value="0"></label>
+        /
+        <label> R <input type="number" id="b" value="0"></label>
+        =
+        <label> I <output name="x" for="a b"></output></label>
+    </form>
+    <label>3 Phase Power:</label>
+    <form oninput="x.value=(1.73*parseFloat(a.value)*parseFloat(b.value)*parseFloat(c.value))/1000">
+        <label> 1.73 </label>
+        *
+        <label> V <input type="number" id="a" value="0"></label>
+        *
+        <label> I <input type="number" id="b" value="0"></label>
+        *
+        <label> pF <input type="number" id="c" value="0"></label>
+        =
+        <label> KW <output name="x" for="a b c"></output></label>
+        <label> / 1000 </label>
+    </form>
+    </details>
+    <!-- add nyan cat -->
+    </br>
+    <img src="https://www.nyan.cat/cats/original.gif" alt="nyan cat">   
+    </br>
+</div>
