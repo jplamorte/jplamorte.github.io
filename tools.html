@@ -16,60 +16,65 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJH3TKP245"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-PJH3TKP245');
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PJH3TKP245');
 </script>
 
 </head>
 
 <body>
-<div class="center">
-<header>
-    <h1>jp.lamorte</h1>
-    <nav>
-        <ul id="mainMenu">
-            <li><a href="https://www.jplamorte.com">Home</a></li>
-            <li><a href="https://www.jplamorte.com/tools.html">Tools</a></li>
-        </ul>
-    </nav>
-</br>
-<hr>
-    <h2>tools</h2>
-</header>
-    <label> Ohm's Law:</label>
-    <form oninput="x.value=parseFloat(a.value)/parseFloat(b.value)">
-        <label> V <input type="number" id="a" value="0"></label>
-        /
-        <label> I <input type="number" id="b" value="0"></label>
-        =
-        <label> R <output name="x" for="a b"></output></label>
-    </form>
+    <div class="center">
+        <header>
+            <h1>jp.lamorte</h1>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="https://www.jplamorte.com">Home</a></li>
+                    <li><a href="https://www.jplamorte.com/tools.html">Tools</a></li>
+                </ul>
+            </nav>
+            </br>
+            <hr>
+            <h2>tools</h2>
+        </header>
+        <div class="mainDiv">
+            <label> Ohm's Law:</label>
+            <form oninput="x.value=parseFloat(a.value)/parseFloat(b.value)">
+                <label> V <input type="number" id="a" value="0"></label>
+                /
+                <label> I <input type="number" id="b" value="0"></label>
+                =
+                <label> R <output name="x" for="a b"></output></label>
+            </form>
 
-    <form oninput="x.value=parseFloat(a.value)/parseFloat(b.value)">
-        <label> V <input type="number" id="a" value="0"></label>
-        /
-        <label> R <input type="number" id="b" value="0"></label>
-        =
-        <label> I <output name="x" for="a b"></output></label>
-    </form>
-    <label>3 Phase Power:</label>
-    <form oninput="x.value=(1.73*parseFloat(a.value)*parseFloat(b.value)*parseFloat(c.value))/1000">
-        <label> 1.73 </label>
-        *
-        <label> V <input type="number" id="a" value="0"></label>
-        *
-        <label> I <input type="number" id="b" value="0"></label>
-        *
-        <label> pF <input type="number" id="c" value="0"></label>
-        <label> / 1000 </label>
-        =
-        <label> KW <output name="x" for="a b c"></output></label>
+            <form oninput="x.value=parseFloat(a.value)/parseFloat(b.value)">
+                <label> V <input type="number" id="a" value="0"></label>
+                /
+                <label> R <input type="number" id="b" value="0"></label>
+                =
+                <label> I <output name="x" for="a b"></output></label>
+            </form>
+            <label>3 Phase Power:</label>
+            <form oninput="x.value=(1.73*parseFloat(a.value)*parseFloat(b.value)*parseFloat(c.value))/1000">
+                <label> 1.73 </label>
+                *
+                <label> V <input type="number" id="a" value="0"></label>
+                *
+                <label> I <input type="number" id="b" value="0"></label>
+                *
+                <label> pF <input type="number" id="c" value="0"></label>
+                <label> / 1000 </label>
+                =
+                <label> KW <output name="x" for="a b c"></output></label>
 
-    </form>
-
-</div>
+            </form>
+        </div>
+    </div>
 </body>
+
 </html>
