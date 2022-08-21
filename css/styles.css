@@ -32,6 +32,8 @@
 .mainDiv {
   background-color: beige;
   color: black;
+  border-radius: 1.5em;
+  padding: 10px;
 }
 
 body {
