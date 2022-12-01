@@ -1,2 +1,5 @@
 # jplamorte.github.io
-about me
+
+https://www.jplamorte.com
+
+my personal website
