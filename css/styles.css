@@ -6,30 +6,29 @@
 #mainMenu {
   margin: 10px;
   width: 900px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
 }
 
 #mainMenu li {
-  display: block;
-  width: 120px;
-  float: left;
-  margin-left: 2px;
   color: lightgreen;
   border: 1px solid #000;
+  flex: 1;
 }
 
 #mainMenu a {
   display: block;
-  padding: 3px;
+  padding: 10px;
   text-decoration: none;
   color: lightgreen;
+  text-align: center;
   border-radius: 2.5em;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-#mainMenu a:hover {
-  background-color: lightgreen;
-  color: black;
-}
-
+#mainMenu a:hover,
 #mainMenu a:active {
   background-color: lightgreen;
   color: black;
@@ -40,17 +39,15 @@
   color: black;
   border-radius: 1.5em;
   padding: 10px;
+  margin-top: 20px;
 }
 
 body {
   background-color: black;
   color: white;
   font-family: "Courier New", Courier, monospace;
-}
-
-ol,
-ul {
-  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -62,4 +59,35 @@ h1 {
 a {
   color: cornflowerblue;
   text-decoration: none;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+footer li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer a {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
 }
