@@ -1,37 +1,38 @@
 <!doctype HTML>
 <html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>jp.lamorte</title>
 
-<meta property="og:title" content="jplamorte.com">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.jplamorte.com">
-<meta property="og:description" content="my personal website.">
-<!-- <meta property="og:image" content="image.png" -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jp.lamorte</title>
 
-<link rel="stylesheet" href="css/styles.css?v=1.0">
-<script src="js/scripts.js"></script>
+    <meta property="og:title" content="jplamorte.com">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.jplamorte.com">
+    <meta property="og:description" content="my personal website.">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PJH3TKP245"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
 
-    gtag('config', 'G-PJH3TKP245');
-</script>
-<!-- end script - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJH3TKP245"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PJH3TKP245');
+    </script>
+    <!-- end script - Google Analytics -->
 </head>
 
 <body>
     <div class="center">
-        <header>
+        <header class="site-header">
             <h1>jp.lamorte</h1>
             <nav>
                 <ul id="mainMenu">
@@ -43,7 +44,6 @@
             <hr>
 
             <h2>home</h2>
-
         </header>
         <div class="mainDiv">
             <p>welcome to my personal space.</p>
@@ -55,13 +55,14 @@
             </details>
         </div>
     </div>
-</body>
-<footer>
-    <!-- <p>last updated: <script>document.write( new Date().toLocaleString() );</script></p> -->
-    <p>&#169; <script>document.write( new Date().getFullYear() );</script> J.P. LaMorte</p>
+
+    <footer>
+        <p>&#169; <script>document.write( new Date().getFullYear() );</script> J.P. LaMorte</p>
         <ul>
-        <li><a href="https://www.linkedin.com/in/jplamorte/">linkedin</a></li>
-        <li><a href="https://www.github.com/jplamorte">github</a></li>
+            <li><a href="https://www.linkedin.com/in/jplamorte/">linkedin</a></li>
+            <li><a href="https://www.github.com/jplamorte">github</a></li>
         </ul>
-</footer>
+    </footer>
+</body>
+
 </html>
