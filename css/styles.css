@@ -1,93 +1,154 @@
-.center {
-  text-align: center;
-  padding: 10px;
+/* General Styles */
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
+/* Centering Utility */
+.center {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation Menu */
 #mainMenu {
-  margin: 10px;
-  width: 900px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 900px;
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 4px;
+  gap: 10px;
+  padding: 0;
 }
 
 #mainMenu li {
-  color: lightgreen;
-  border: 1px solid #000;
   flex: 1;
 }
 
 #mainMenu a {
   display: block;
-  padding: 10px;
+  padding: 15px 20px;
   text-decoration: none;
-  color: lightgreen;
+  color: #90ee90;
   text-align: center;
-  border-radius: 2.5em;
-  transition: background-color 0.3s, color 0.3s;
+  border: 2px solid #90ee90;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
 }
 
 #mainMenu a:hover,
 #mainMenu a:active {
-  background-color: lightgreen;
-  color: black;
+  background-color: #90ee90;
+  color: #1a1a1a;
+  border-color: #1a1a1a;
 }
 
+/* Main Content Styling */
 .mainDiv {
-  background-color: beige;
-  color: black;
-  border-radius: 1.5em;
-  padding: 10px;
-  margin-top: 20px;
+  background-color: #f5f5dc;
+  color: #1a1a1a;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  background-color: black;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  margin: 0;
-  padding: 0;
-}
-
+/* Headers */
 h1 {
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
+  font-size: 3.5em;
+  margin: 10px 0;
 }
 
+h2 {
+  font-size: 2em;
+  margin: 20px 0 10px;
+}
+
+/* Links */
 a {
-  color: cornflowerblue;
+  color: #6495ed;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
+a:hover {
+  color: #90ee90;
+}
+
+/* Footer Styling */
 footer {
-  background-color: black;
-  color: white;
-  padding: 10px;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  padding: 20px;
   text-align: center;
 }
 
 footer p {
-  margin: 0;
+  margin: 5px 0;
 }
 
 footer ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 10px 0 0;
 }
 
 footer li {
   display: inline-block;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 footer a {
-  color: lightgreen;
+  color: #90ee90;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: white;
+  color: #f0f0f0;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1.2em;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #90ee90;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a1a1a;
+  color: #90ee90;
 }
