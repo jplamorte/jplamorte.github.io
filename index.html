@@ -4,25 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>jp.lamorte</title>
+    <title>J.P. LaMorte | Software Developer & Automation Specialist</title>
 
-    <meta property="og:title" content="jplamorte.com">
+    <meta property="og:title" content="J.P. LaMorte | Software Developer & Automation Specialist">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.jplamorte.com">
-    <meta property="og:description" content="my personal website.">
+    <meta property="og:description" content="Portfolio and professional homepage of J.P. LaMorte.">
 
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJH3TKP245"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-PJH3TKP245');
@@ -31,39 +32,67 @@
 </head>
 
 <body>
-    <div class="center">
+    <div class="container">
         <header class="site-header">
-            <h1>jp.lamorte</h1>
+            <h1>J.P. LaMorte</h1>
+            <p>Software Developer & Automation Specialist</p>
             <nav>
                 <ul id="mainMenu">
-                    <li><a href="https://www.jplamorte.com">Home</a></li>
-                    <li><a href="https://www.jplamorte.com/tools.html">Tools</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-            <br>
             <hr>
-
-            <h2>home</h2>
         </header>
-        <div class="mainDiv">
-            <p>welcome to my personal space.</p>
-            <p>currently under construction.</p>
-            <p> - j.p.l.</p>
-            <details>
-                <summary></summary>
-                <p>test</p>
-            </details>
-        </div>
+
+        <main>
+            <section class="intro">
+                <img src="images/profile.jpg" alt="J.P. LaMorte" class="profile-pic">
+                <p>Hello! I'm J.P. LaMorte, a software developer with a deep expertise in automation and controls. My
+                    passion lies in creating efficient, reliable, and innovative solutions for the electrical industry.
+                    I specialize in programming PLCs, HMIs, and developing tools that streamline processes and enhance
+                    system reliability.</p>
+            </section>
+
+            <section class="highlights">
+                <h2>Professional Highlights</h2>
+                <ul>
+                    <li><strong>PLC & HMI Programming:</strong> Extensive experience with IEC61131-3 languages,
+                        specializing in ladder logic and structured text.</li>
+                    <li><strong>SCADA Systems:</strong> Proficient in Siemens WinCC, Wonderware Intouch, and other SCADA
+                        platforms.</li>
+                    <li><strong>Tool Development:</strong> Created tools in Python, C#, and VBA that reduced production
+                        scheduling time by over 80%, and developed solutions that communicated with PLCs and managed
+                        Windows 10 services.</li>
+                    <li><strong>Project Leadership:</strong> Successfully managed lifecycle upgrades for large data
+                        centers, with a combined value of over $15 million.</li>
+                </ul>
+            </section>
+
+            <section class="call-to-action">
+                <h2>Let's Work Together</h2>
+                <p>I'm always looking for new challenges and opportunities to apply my skills. If you think we could
+                    create something amazing together, <a href="contact.html">get in touch</a> or check out my <a
+                        href="tools.html">projects</a> to see what I've been working on.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&#169;
+                <script>document.write(new Date().getFullYear());</script> J.P. LaMorte
+            </p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/jplamorte/" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.github.com/jplamorte" target="_blank" rel="noopener noreferrer"><i
+                            class="fab fa-github"></i></a></li>
+            </ul>
+        </footer>
     </div>
 
-    <footer>
-        <p>&#169;
-        <script>document.write(new Date().getFullYear());</script> J.P. LaMorte</p>
-        <ul class="social-icons">
-            <li><a href="https://www.linkedin.com/in/jplamorte/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.github.com/jplamorte"><i class="fab fa-github"></i></a></li>
-        </ul>
-    </footer>
+    <!-- External JavaScript file if needed -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
