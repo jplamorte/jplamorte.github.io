@@ -1,123 +1,90 @@
-<!DOCTYPE html>
+<!doctype HTML>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J.P. LaMorte | Tools & Projects</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>J.P. LaMorte | Software Developer & Automation Specialist</title>
 
-    <meta property="og:title" content="J.P. LaMorte | Tools & Projects">
+    <meta property="og:title" content="J.P. LaMorte | Software Developer & Automation Specialist">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.jplamorte.com/tools.html">
-    <meta property="og:description" content="Explore the tools and projects developed by J.P. LaMorte.">
+    <meta property="og:url" content="https://www.jplamorte.com">
+    <meta property="og:description" content="Portfolio and professional homepage of J.P. LaMorte.">
 
-    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
+
 </head>
 
 <body>
-    <header>
-        <h1>Tools & Projects</h1>
+    <header class="site-header">
+        <h1>J.P. LaMorte</h1>
+        <p>Software Developer & Automation Specialist</p>
         <nav>
             <ul id="mainMenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="tools.html">Tools</a></li>
+                <li><a href="tools.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <hr>
     </header>
+    s
 
     <main class="main">
         <section class="intro">
-            <h2>Welcome to My Tools & Projects</h2>
+            <h2>Tools & Projects</h2>
             <p>Here you’ll find a collection of tools and projects that I've developed over the years. These tools have
                 been instrumental in streamlining processes, improving efficiency, and solving complex problems in
-                various domains. From automation scripts to full-fledged applications, each tool reflects my commitment
-                to quality and innovation.</p>
+                various domains. Additionally, I've included some interactive calculators for common power engineering
+                tasks.</p>
         </section>
 
         <section class="tool">
-            <h3>PLC Communication & Service Management Tool</h3>
-            <p><strong>Description:</strong> This tool facilitates communication with Programmable Logic Controllers
-                (PLCs) and automates the management of Windows 10 services. It’s designed to ensure smooth operations by
-                monitoring and restarting critical services as needed.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Real-time communication with PLCs</li>
-                <li>Automated service monitoring and restart on Windows 10</li>
-                <li>User-friendly interface for easy operation</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Python, Windows Batch Scripting, OPC UA, MQTT</p>
+            <h3>Ohm's Law Calculator</h3>
+            <div class="calculator">
+                <h3>Calculate Voltage, Current, or Resistance</h3>
+                <label for="voltage">Voltage (V):</label>
+                <input type="number" id="voltage" placeholder="Enter voltage (V)">
+                <label for="current">Current (I):</label>
+                <input type="number" id="current" placeholder="Enter current (I)">
+                <label for="resistance">Resistance (R):</label>
+                <input type="number" id="resistance" placeholder="Enter resistance (R)">
+                <button onclick="calculateOhmsLaw()">Calculate</button>
+                <div class="result" id="ohmsLawResult"></div>
+            </div>
         </section>
 
         <section class="tool">
-            <h3>Production Scheduling Optimization Tool</h3>
-            <p><strong>Description:</strong> This tool was developed to reduce production scheduling time by over 80%.
-                It provides a standardized task list for production, allowing for easy modifications and seamless
-                integration into existing workflows.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Automated task list generation</li>
-                <li>Customizable templates for different production scenarios</li>
-                <li>Integration with existing production management systems</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> C#, VBA, SQL</p>
+            <h3>Power Calculator</h3>
+            <div class="calculator">
+                <h3>Calculate Power, Voltage, or Current</h3>
+                <label for="power">Power (P) in Watts:</label>
+                <input type="number" id="power" placeholder="Enter power (P)">
+                <label for="voltageP">Voltage (V):</label>
+                <input type="number" id="voltageP" placeholder="Enter voltage (V)">
+                <label for="currentP">Current (I) in Amps:</label>
+                <input type="number" id="currentP" placeholder="Enter current (I)">
+                <button onclick="calculatePower()">Calculate</button>
+                <div class="result" id="powerResult"></div>
+            </div>
         </section>
 
         <section class="tool">
-            <h3>SCADA System Integration Tool</h3>
-            <p><strong>Description:</strong> This tool enhances the functionality of SCADA systems by integrating
-                various data sources and automating the visualization of critical metrics. It’s particularly useful in
-                large-scale industrial environments where monitoring multiple systems simultaneously is crucial.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Data integration from multiple sources</li>
-                <li>Automated dashboard creation and updates</li>
-                <li>Alerting system for critical metrics</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Siemens WinCC, Wonderware Intouch, Python</p>
-        </section>
-
-        <section class="tool">
-            <h3>Legacy System Upgrade and Migration Tool</h3>
-            <p><strong>Description:</strong> This tool was pivotal in upgrading and migrating legacy systems to modern
-                platforms, ensuring minimal downtime and data integrity. It supports various protocols and ensures
-                compatibility with new system architectures.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Seamless migration of legacy data</li>
-                <li>Support for multiple communication protocols</li>
-                <li>Automated testing and validation features</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> PROFINET, Modbus, OPC UA, Python, C#</p>
-        </section>
-
-        <section class="tool">
-            <h3>Web-Based Reporting Tool</h3>
-            <p><strong>Description:</strong> A web-based tool designed to generate and manage reports for various
-                departments. This tool allows for easy access to data, customization of report formats, and automated
-                distribution of reports via email.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Customizable report templates</li>
-                <li>Automated data extraction and report generation</li>
-                <li>Integration with email servers for automated distribution</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Django, HTML/CSS, JavaScript, SQL</p>
-        </section>
-
-        <section class="tool">
-            <h3>Custom Tool Development</h3>
-            <p><strong>Description:</strong> Over the years, I've developed numerous custom tools tailored to specific
-                needs, ranging from small scripts to complex applications. Each tool is built with the goal of solving
-                real-world problems efficiently and effectively.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Customized solutions for unique challenges</li>
-                <li>Integration with existing systems and workflows</li>
-                <li>Focus on user-friendly design and reliability</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Python, C#, VBA, .NET, SQL</p>
+            <h3>Energy Consumption Calculator</h3>
+            <div class="calculator">
+                <h3>Calculate Energy Consumption</h3>
+                <label for="powerE">Power (P) in Watts:</label>
+                <input type="number" id="powerE" placeholder="Enter power (P)">
+                <label for="timeE">Time (t) in Hours:</label>
+                <input type="number" id="timeE" placeholder="Enter time (t)">
+                <button onclick="calculateEnergy()">Calculate</button>
+                <div class="result" id="energyResult"></div>
+            </div>
         </section>
     </main>
 
@@ -130,6 +97,60 @@
             <li><a href="https://www.github.com/jplamorte"><i class="fab fa-github"></i></a></li>
         </ul>
     </footer>
+
+    <script>
+        function calculateOhmsLaw() {
+            const voltage = parseFloat(document.getElementById('voltage').value);
+            const current = parseFloat(document.getElementById('current').value);
+            const resistance = parseFloat(document.getElementById('resistance').value);
+            let result = '';
+
+            if (!isNaN(voltage) && !isNaN(current)) {
+                result = `Resistance (R) = ${(voltage / current).toFixed(2)} Ohms`;
+            } else if (!isNaN(voltage) && !isNaN(resistance)) {
+                result = `Current (I) = ${(voltage / resistance).toFixed(2)} Amps`;
+            } else if (!isNaN(current) && !isNaN(resistance)) {
+                result = `Voltage (V) = ${(current * resistance).toFixed(2)} Volts`;
+            } else {
+                result = 'Please enter any two values to calculate the third.';
+            }
+
+            document.getElementById('ohmsLawResult').innerText = result;
+        }
+
+        function calculatePower() {
+            const power = parseFloat(document.getElementById('power').value);
+            const voltageP = parseFloat(document.getElementById('voltageP').value);
+            const currentP = parseFloat(document.getElementById('currentP').value);
+            let result = '';
+
+            if (!isNaN(power) && !isNaN(voltageP)) {
+                result = `Current (I) = ${(power / voltageP).toFixed(2)} Amps`;
+            } else if (!isNaN(power) && !isNaN(currentP)) {
+                result = `Voltage (V) = ${(power / currentP).toFixed(2)} Volts`;
+            } else if (!isNaN(voltageP) && !isNaN(currentP)) {
+                result = `Power (P) = ${(voltageP * currentP).toFixed(2)} Watts`;
+            } else {
+                result = 'Please enter any two values to calculate the third.';
+            }
+
+            document.getElementById('powerResult').innerText = result;
+        }
+
+        function calculateEnergy() {
+            const powerE = parseFloat(document.getElementById('powerE').value);
+            const timeE = parseFloat(document.getElementById('timeE').value);
+            let result = '';
+
+            if (!isNaN(powerE) && !isNaN(timeE)) {
+                result = `Energy Consumption = ${(powerE * timeE / 1000).toFixed(2)} kWh`;
+            } else {
+                result = 'Please enter both power and time to calculate energy consumption.';
+            }
+
+            document.getElementById('energyResult').innerText = result;
+        }
+    </script>
 </body>
 
 </html>
