@@ -16,120 +16,131 @@
 </head>
 
 <body>
-    <header>
-        <h1>Tools & Projects</h1>
-        <nav>
-            <ul id="mainMenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tools.html">Tools</a></li>
-                <li><a href="contact.html">Contact</a></li>
+    <div class="container">
+        <header class="site-header">
+            <h1>J.P. LaMorte</h1>
+            <p>Software Developer & Automation Specialist</p>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tools.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <hr>
+        </header>
+        <main class="main">
+            <section class="intro">
+                <h2>Welcome to My Tools & Projects</h2>
+                <p>Here you’ll find a collection of tools and projects that I've developed over the years. These tools
+                    have
+                    been instrumental in streamlining processes, improving efficiency, and solving complex problems in
+                    various domains. From automation scripts to full-fledged applications, each tool reflects my
+                    commitment
+                    to quality and innovation.</p>
+            </section>
+
+            <section class="tool">
+                <h3>PLC Communication & Service Management Tool</h3>
+                <p><strong>Description:</strong> This tool facilitates communication with Programmable Logic Controllers
+                    (PLCs) and automates the management of Windows 10 services. It’s designed to ensure smooth
+                    operations by
+                    monitoring and restarting critical services as needed.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Real-time communication with PLCs</li>
+                    <li>Automated service monitoring and restart on Windows 10</li>
+                    <li>User-friendly interface for easy operation</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Python, Windows Batch Scripting, OPC UA, MQTT</p>
+            </section>
+
+            <section class="tool">
+                <h3>Production Scheduling Optimization Tool</h3>
+                <p><strong>Description:</strong> This tool was developed to reduce production scheduling time by over
+                    80%.
+                    It provides a standardized task list for production, allowing for easy modifications and seamless
+                    integration into existing workflows.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Automated task list generation</li>
+                    <li>Customizable templates for different production scenarios</li>
+                    <li>Integration with existing production management systems</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> C#, VBA, SQL</p>
+            </section>
+
+            <section class="tool">
+                <h3>SCADA System Integration Tool</h3>
+                <p><strong>Description:</strong> This tool enhances the functionality of SCADA systems by integrating
+                    various data sources and automating the visualization of critical metrics. It’s particularly useful
+                    in
+                    large-scale industrial environments where monitoring multiple systems simultaneously is crucial.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Data integration from multiple sources</li>
+                    <li>Automated dashboard creation and updates</li>
+                    <li>Alerting system for critical metrics</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Siemens WinCC, Wonderware Intouch, Python</p>
+            </section>
+
+            <section class="tool">
+                <h3>Legacy System Upgrade and Migration Tool</h3>
+                <p><strong>Description:</strong> This tool was pivotal in upgrading and migrating legacy systems to
+                    modern
+                    platforms, ensuring minimal downtime and data integrity. It supports various protocols and ensures
+                    compatibility with new system architectures.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Seamless migration of legacy data</li>
+                    <li>Support for multiple communication protocols</li>
+                    <li>Automated testing and validation features</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> PROFINET, Modbus, OPC UA, Python, C#</p>
+            </section>
+
+            <section class="tool">
+                <h3>Web-Based Reporting Tool</h3>
+                <p><strong>Description:</strong> A web-based tool designed to generate and manage reports for various
+                    departments. This tool allows for easy access to data, customization of report formats, and
+                    automated
+                    distribution of reports via email.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Customizable report templates</li>
+                    <li>Automated data extraction and report generation</li>
+                    <li>Integration with email servers for automated distribution</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Django, HTML/CSS, JavaScript, SQL</p>
+            </section>
+
+            <section class="tool">
+                <h3>Custom Tool Development</h3>
+                <p><strong>Description:</strong> Over the years, I've developed numerous custom tools tailored to
+                    specific
+                    needs, ranging from small scripts to complex applications. Each tool is built with the goal of
+                    solving
+                    real-world problems efficiently and effectively.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Customized solutions for unique challenges</li>
+                    <li>Integration with existing systems and workflows</li>
+                    <li>Focus on user-friendly design and reliability</li>
+                </ul>
+                <p><strong>Technologies Used:</strong> Python, C#, VBA, .NET, SQL</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&#169;
+                <script>document.write(new Date().getFullYear());</script> J.P. LaMorte
+            </p>
+            <ul class="social-icons">
+                <li><a href="https://www.linkedin.com/in/jplamorte/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.github.com/jplamorte"><i class="fab fa-github"></i></a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main class="main">
-        <section class="intro">
-            <h2>Welcome to My Tools & Projects</h2>
-            <p>Here you’ll find a collection of tools and projects that I've developed over the years. These tools have
-                been instrumental in streamlining processes, improving efficiency, and solving complex problems in
-                various domains. From automation scripts to full-fledged applications, each tool reflects my commitment
-                to quality and innovation.</p>
-        </section>
-
-        <section class="tool">
-            <h3>PLC Communication & Service Management Tool</h3>
-            <p><strong>Description:</strong> This tool facilitates communication with Programmable Logic Controllers
-                (PLCs) and automates the management of Windows 10 services. It’s designed to ensure smooth operations by
-                monitoring and restarting critical services as needed.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Real-time communication with PLCs</li>
-                <li>Automated service monitoring and restart on Windows 10</li>
-                <li>User-friendly interface for easy operation</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Python, Windows Batch Scripting, OPC UA, MQTT</p>
-        </section>
-
-        <section class="tool">
-            <h3>Production Scheduling Optimization Tool</h3>
-            <p><strong>Description:</strong> This tool was developed to reduce production scheduling time by over 80%.
-                It provides a standardized task list for production, allowing for easy modifications and seamless
-                integration into existing workflows.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Automated task list generation</li>
-                <li>Customizable templates for different production scenarios</li>
-                <li>Integration with existing production management systems</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> C#, VBA, SQL</p>
-        </section>
-
-        <section class="tool">
-            <h3>SCADA System Integration Tool</h3>
-            <p><strong>Description:</strong> This tool enhances the functionality of SCADA systems by integrating
-                various data sources and automating the visualization of critical metrics. It’s particularly useful in
-                large-scale industrial environments where monitoring multiple systems simultaneously is crucial.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Data integration from multiple sources</li>
-                <li>Automated dashboard creation and updates</li>
-                <li>Alerting system for critical metrics</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Siemens WinCC, Wonderware Intouch, Python</p>
-        </section>
-
-        <section class="tool">
-            <h3>Legacy System Upgrade and Migration Tool</h3>
-            <p><strong>Description:</strong> This tool was pivotal in upgrading and migrating legacy systems to modern
-                platforms, ensuring minimal downtime and data integrity. It supports various protocols and ensures
-                compatibility with new system architectures.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Seamless migration of legacy data</li>
-                <li>Support for multiple communication protocols</li>
-                <li>Automated testing and validation features</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> PROFINET, Modbus, OPC UA, Python, C#</p>
-        </section>
-
-        <section class="tool">
-            <h3>Web-Based Reporting Tool</h3>
-            <p><strong>Description:</strong> A web-based tool designed to generate and manage reports for various
-                departments. This tool allows for easy access to data, customization of report formats, and automated
-                distribution of reports via email.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Customizable report templates</li>
-                <li>Automated data extraction and report generation</li>
-                <li>Integration with email servers for automated distribution</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Django, HTML/CSS, JavaScript, SQL</p>
-        </section>
-
-        <section class="tool">
-            <h3>Custom Tool Development</h3>
-            <p><strong>Description:</strong> Over the years, I've developed numerous custom tools tailored to specific
-                needs, ranging from small scripts to complex applications. Each tool is built with the goal of solving
-                real-world problems efficiently and effectively.</p>
-            <p><strong>Key Features:</strong></p>
-            <ul>
-                <li>Customized solutions for unique challenges</li>
-                <li>Integration with existing systems and workflows</li>
-                <li>Focus on user-friendly design and reliability</li>
-            </ul>
-            <p><strong>Technologies Used:</strong> Python, C#, VBA, .NET, SQL</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&#169;
-            <script>document.write(new Date().getFullYear());</script> J.P. LaMorte
-        </p>
-        <ul class="social-icons">
-            <li><a href="https://www.linkedin.com/in/jplamorte/"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.github.com/jplamorte"><i class="fab fa-github"></i></a></li>
-        </ul>
-    </footer>
+        </footer>
 </body>
 
 </html>
